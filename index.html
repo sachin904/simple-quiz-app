@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz-app</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0px;
+        }
+        .container {
+            height: auto;
+            width: 400px;
+            border: 2px solid black;
+            overflow: hidden;
+            margin-top: 200px;
+        }
+        .no {
+            height: 50px;
+            width: 400px;
+            background-color: rgb(4, 4, 98);
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+        }
+        .quescontainer {
+            padding-left: 8px;
+        }
+        .submit {
+            height: 20px;
+            width: 400px;
+            background-color: rgb(4, 4, 98);
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="no" id="questionNumber"><h1>Question-1</h1></div>
+        <div class="quescontainer" id="questionContainer">
+          <h2 id="questionText">Here is the question</h2>
+           <input id="op1" class="ans" name="answer" type="radio"> <span id="option1"></span>
+           <br>
+           <input id="op2" class="ans" name="answer" type="radio"> <span id="option2"></span>
+           <br>
+           <input id="op3"  class="ans" name="answer" type="radio"> <span id="option3"></span>
+           <br>
+           <input id="op4" class="ans" name="answer" type="radio"> <span id="option4"></span>
+        </div>
+        <div id="submitBtn" class="submit">Submit</div>
+    </div>
+    <script type="module" src="index.js"></script>
+   
+</body>
+</html>
